@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAX Casual Street T-shirt | JAX Apparel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">JAX Apparel</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="kollektioner.html">Kollektioner</a></li>
+                <li><a href="omoss.html">Om Oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="kundvagn.html">Kundvagn</a></li>
+                 <li><a href="checkout.html">kassa</a></li>
+            </ul>
+            <i class="fa fa-bars" id="mobile-menu"></i>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="product-detail-layout">
+                
+                <div class="product-gallery">
+                    <img src="vuxen-tshirt.jpg" alt="JAX Casual T-shirt - Huvudbild" id="uminglish-1">
+                    
+                    <div class="thumbnail-gallery margin-top-20">
+                        </div>
+                </div>
+
+                <div class="product-info">
+                    <p class="category-link"><a href="kollektioner.html">Kollektioner</a> / Ungdom</p>
+                    <h1>JAX Casual Street T-shirt</h1>
+                    
+                    <div class="price">499 SEK</div>
+
+                    <p>En modern T-shirt i funktionsmaterial som passar perfekt för både skolan och fritiden. Designad med JAX lekfulla logotyp på bröstet. Hög andningsförmåga och snabbtorkande material.</p>
+                    
+                    <hr class="margin-20-0">
+
+                    <form id="purchase-form">
+                        <label><strong>Välj Storlek:</strong></label>
+                        <div class="size-selector">
+                            <button type="button" data-size="S">S</button>
+                            <button type="button" data-size="M" class="selected">M</button>
+                            <button type="button" data-size="L">L</button>
+                            <button type="button" data-size="XL">XL</button>
+                        </div>
+
+                        <label class="margin-top-20"><strong>Antal:</strong></label>
+                        <input type="number" value="1" min="1" max="10" class="quantity-input-small">
+
+                        <button type="submit" class="cta-button add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Lägg i Kundvagn
+                        </button>
+                    </form>
+                    
+                    <div class="margin-top-30">
+                        <h3>Material & Skötsel:</h3>
+                        <ul>
+                            <li>80% Återvunnen Polyester, 20% Bomull</li>
+                            <li>Maskintvätt 40°C</li>
+                            <li>Modern passform (Regular Fit)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="product-added-alert" class="product-added-alert">
+            Produkt lades i kundvagnen!
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

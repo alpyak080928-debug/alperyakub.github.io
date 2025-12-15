@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassa | JAX Apparel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">JAX Apparel</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="kollektioner.html">Kollektioner</a></li>
+                <li><a href="omoss.html">Om Oss</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="kundvagn.html">Kundvagn</a></li>
+                 <li><a href="checkout.html">kassa</a></li>
+            </ul>
+            <i class="fa fa-bars" id="mobile-menu"></i>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container checkout-layout">
+            
+            <h1>Gå till Kassan</h1>
+
+            <div class="checkout-grid">
+                
+                <div class="checkout-form-area">
+                    
+                    <div class="shipping-section checkout-box">
+                        <h2>1. Leveransadress</h2>
+                        <form id="shipping-form">
+                            <label for="email">E-post</label>
+                            <input type="email" id="email" name="email" required placeholder="din.epost@exempel.se">
+
+                            <label for="name">Namn</label>
+                            <input type="text" id="name" name="name" required placeholder="Förnamn Efternamn">
+
+                            <label for="address">Gatuadress</label>
+                            <input type="text" id="address" name="address" required placeholder="Exempelgatan 1A">
+
+                            <label for="zip">Postnummer</label>
+                            <input type="text" id="zip" name="zip" required placeholder="123 45">
+
+                            <label for="city">Ort</label>
+                            <input type="text" id="city" name="city" required placeholder="Stockholm">
+                            
+                            <label for="phone">Telefonnummer (valfritt)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="070-123 45 67">
+                        </form>
+                    </div>
+
+                    <div class="payment-section checkout-box margin-top-40">
+                        <h2>2. Betalning</h2>
+                        <div class="payment-options">
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="card" checked>
+                                Kortbetalning (Visa, Mastercard)
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="swish">
+                                Swish
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment" value="invoice">
+                                Faktura (Klarna)
+                            </label>
+                        </div>
+                        
+                        <div id="card-details" class="card-details">
+                            <label for="card-number">Kortnummer</label>
+                            <input type="text" id="card-number" placeholder="xxxx xxxx xxxx xxxx">
+
+                            <div class="card-inline">
+                                <div>
+                                    <label for="expiry">Utgångsdatum (MM/ÅÅ)</label>
+                                    <input type="text" id="expiry" placeholder="01/27">
+                                </div>
+                                <div>
+                                    <label for="cvc">CVC</label>
+                                    <input type="text" id="cvc" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="checkout-summary-area">
+                    <div class="summary-box">
+                        <h2>Din Order</h2>
+                        
+                        <div id="checkout-cart-items" class="cart-items-list">
+                            <p>Laddar kundvagn...</p>
+                        </div>
+                        
+                        <hr>
+                        
+                        <div class="summary-row">
+                            <span>Delsumma:</span>
+                            <span id="subtotal">0 SEK</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Frakt:</span>
+                            <span id="shipping-cost">49 SEK</span>
+                        </div>
+                        
+                        <hr class="total-divider">
+
+                        <div class="summary-row total-row">
+                            <strong>Totalt:</strong>
+                            <strong id="final-total">0 SEK</strong>
+                        </div>
+
+                        <button type="submit" form="shipping-form" class="cta-button full-width margin-top-20">
+                            Slutför Köp
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+    </main>
+    
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+     <script src="init.js"></script>
+</body>
+</html>

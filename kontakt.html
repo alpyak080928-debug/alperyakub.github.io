@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | JAX Apparel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">JAX Apparel</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="kollektioner.html">Kollektioner</a></li>
+                <li><a href="omoss.html">Om Oss</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li><a href="kundvagn.html">Kundvagn</a></li>
+                 <li><a href="checkout.html">kassa</a></li>
+            </ul>
+            <i class="fa fa-bars" id="mobile-menu"></i>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Kontakta Oss</h2>
+            <p>Vi älskar att höra från våra kunder! Fyll i formuläret, eller använd vår direktkontakt nedan.</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Skicka ett Meddelande</h3>
+                    <form action="#" method="POST" id="contact-form">
+                        <label for="name">Namn:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="subject">Ämne:</label>
+                        <input type="text" id="subject" name="subject">
+
+                        <label for="message">Meddelande:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit" class="cta-button">Skicka</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Direktkontakt</h3>
+                    <p><strong>E-post:</strong> info@jaxapparel.se</p>
+                    <p><strong>Telefon:</strong> +46 8 455423 </p>
+                    
+                    <h3 class="margin-top-30">Huvudkontor (Endast administration)</h3>
+                    <p>JAX Apparel AB</p>
+                    <p>Designvägen 5</p>
+                    <p>123 45 Stockholm, Sverige</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-section">
+                <h3>JAX Apparel</h3>
+                <p>Modern design för alla generationer.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Länkar</h3>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="kollektioner.html">Kollektioner</a></li>
+                    <li><a href="omoss.html">Om Oss</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="kundvagn.html">Kundvagn</a></li>
+                     <li><a href="checkout.html">kassa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>info@jaxapparel.se</p>
+                <p>+46 8 455423</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 JAX Apparel. Alla rättigheter reserverade.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
